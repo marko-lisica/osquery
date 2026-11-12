@@ -50,9 +50,9 @@ TEST_F(ProgramsTablesTest, test_build_ms_resource_uris) {
   std::vector<std::string> bareKey = {
       "ms-resource://Microsoft.Todos/Resources/app_name_ms_todo",
       "ms-resource://Microsoft.Todos/app_name_ms_todo"};
-  ASSERT_EQ(buildMsResourceUris("ms-resource:app_name_ms_todo",
-                                "Microsoft.Todos"),
-            bareKey);
+  ASSERT_EQ(
+      buildMsResourceUris("ms-resource:app_name_ms_todo", "Microsoft.Todos"),
+      bareKey);
 
   // Relative path containing a resource map
   std::vector<std::string> relativePath = {
